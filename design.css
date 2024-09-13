@@ -1,0 +1,66 @@
+.container
+{
+    display: grid;
+    height: 100vh;
+
+    grid-template-areas:
+    "header header header header"
+    "main main main mian sidebar"
+    "footer footer footer footer footer"
+    ;
+
+    background-color: rebeccapurple;
+
+}
+
+    header{
+grid-area: header;
+background-color: antiquewhite;
+
+    }
+
+main{
+    grid-area: main;
+    background-color: blanchedalmond;
+
+}
+
+footer{
+    grid-area: footer;
+    background-color: burlywood;
+
+}
+    
+aside{
+        grid-area: aside;
+        background-color: bisque;
+}
+
+.grid-container {
+    display: grid;
+    column-gap: 50px;
+    grid-template-columns: auto auto auto;
+    background-color: rgba(102, 51, 153, 0.301);
+    padding: 10px;
+  }
+  
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.534);
+    border: 1px solid rgba(0, 38, 255, 0.712);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .grid-item:hover > img {
+    visibility: visible;
+}
+
+
+.grid-item> img {
+    visibility: hidden;
+}
+
+body {
+    background: url(img/propagande.webp);
+}
